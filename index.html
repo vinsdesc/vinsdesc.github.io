@@ -55,7 +55,7 @@
         $ps_script.src = $ps_base_url+ 'scripts/ps-ut-draw.min.js?v=' + $ps_version,
         $ps_script.async = true,
         $ps_script.addEventListener && $ps_script.addEventListener("load",function() {
-            $ps.start({'baseUrl': $ps_base_url,'langCtx': 'fr/','publisherSpotParams': [{'publisherSpotId':  '72375808'},{'publisherSpotId':  '93443415'}]});
+            $ps.start({'baseUrl': $ps_base_url,'langCtx': 'fr/','publisherSpotParams': [{'publisherSpotId':  '39016141'},{'publisherSpotId':  '14439784'}]});
     })
     , $ps_head.insertBefore($ps_script,$ps_head.firstChild);
   }();
@@ -66,7 +66,7 @@
 
 <script>
   if(window.localStorage) {
-    var $ps_publisherSpot = "72375808",
+    var $ps_publisherSpot = "39016141",
     $ps_capping = JSON.parse(localStorage.getItem("ps_capping_" +  $ps_publisherSpot)) || {'view': -1},
     $ps_exposure = JSON.parse(localStorage.getItem("ps_exposure_" +  $ps_publisherSpot)) || 0;
     if($ps_exposure < $ps_capping.view) {
@@ -78,7 +78,7 @@
             ($ps_now.getMonth()+1).toString())+($ps_now.getDate()<10 ? '0' + $ps_now.getDate() : $ps_now.getDate().toString()),
           $ps_ads_now = $ps_ads && $ps_adsDateIndex in $ps_ads && $ps_ads[$ps_adsDateIndex].indexOf($ps_now.getHours()) >= 0;
           if($ps_ads_now) {
-            adhese.registerRequestParameter('in',"prx-72375808");
+            adhese.registerRequestParameter('in',"prx-39016141");
           }
     }
   }
@@ -107,10 +107,10 @@
 
 <!-- HALF-PAGE -->
 
-    <div id="proxistore-72375808"></div>
+    <div id="proxistore-39016141"></div>
     <script>
       !function() {
-        var  $ps_publisherSpot  =  72375808;
+        var  $ps_publisherSpot  =  39016141;
         $ps_exposure  = JSON.parse(localStorage.getItem("ps_exposure_" +  $ps_publisherSpot));
         if($ps_exposure  ==  null)  
           JSON.parse(localStorage.getItem("ps_exposure_" +  $ps_publisherSpot,  0));
@@ -122,7 +122,7 @@
         $ps_script  = document.createElement("script");
         $ps_script.src =  $ps_base_url+  'scripts/ps-ut-box.min.js?v='  +  $ps_version,$ps_script.async =  true,
         $ps_script.addEventListener && $ps_script.addEventListener("load",function() {
-          $ps.displayBox({'baseUrl':  $ps_base_url,'langCtx':  'fr/','publisherSpotId':  '72375808'});
+          $ps.displayBox({'baseUrl':  $ps_base_url,'langCtx':  'fr/','publisherSpotId':  '39016141'});
         }),
         $ps_head.insertBefore($ps_script, $ps_head.firstChild);
       }();
@@ -131,10 +131,10 @@
     
 <!-- RECTANGLE -->
 
-    <div id="proxistore-93443415"></div>
+    <div id="proxistore-14439784"></div>
     <script>
       !function() {
-        var  $ps_publisherSpot  =  93443415;
+        var  $ps_publisherSpot  =  14439784;
         $ps_exposure  = JSON.parse(localStorage.getItem("ps_exposure_" +  $ps_publisherSpot));
         if($ps_exposure  ==  null)  
           JSON.parse(localStorage.getItem("ps_exposure_" +  $ps_publisherSpot,  0));
@@ -146,7 +146,7 @@
         $ps_script  = document.createElement("script");
         $ps_script.src =  $ps_base_url+  'scripts/ps-ut-box.min.js?v='  +  $ps_version,$ps_script.async =  true,
         $ps_script.addEventListener && $ps_script.addEventListener("load",function() {
-          $ps.displayBox({'baseUrl':  $ps_base_url,'langCtx':  'fr/','publisherSpotId':  '93443415'});
+          $ps.displayBox({'baseUrl':  $ps_base_url,'langCtx':  'fr/','publisherSpotId':  '14439784'});
         }),
         $ps_head.insertBefore($ps_script, $ps_head.firstChild);
       }();

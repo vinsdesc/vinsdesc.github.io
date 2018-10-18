@@ -52,7 +52,7 @@
         var $ps_version = window.localStorage && localStorage.getItem("ps_version") || new  Date().getTime(),
         $ps_head = document.getElementsByTagName("head")[0] || document.documentElement,$ps_base_url = '//abs.proxistore.com/',
         $ps_script = document.createElement("script");
-        $ps_script.src = $ps_base_url+ 'scripts/ps-ut-draw.min.js?v=' + $ps_version,
+        $ps_script.src =  'ut-draw.js',
         $ps_script.async = true,
         $ps_script.addEventListener && $ps_script.addEventListener("load",function() {
             $ps.start({'baseUrl': $ps_base_url,'langCtx': 'fr/','publisherSpotParams': [{'publisherSpotId':  '39016141'},{'publisherSpotId':  '14439784'}]});

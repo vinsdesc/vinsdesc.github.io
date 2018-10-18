@@ -1,1 +1,52 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Widget</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://preprod.proxistore.com/px-api-transpiled/proxistore.min.css">
+    <script src="https://preprod.proxistore.com/px-api-transpiled/proxistore.min.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+
+<style>
+    body {
+        background-color: grey;
+    }
+    p {
+        height: 1500px;
+    }
+    #container {
+        width: 1000px;
+    }
+</style>
+
+<div id="container">
+    <div id="widget1"></div>   
+</div>
+
+<p></p>
+<div id="widget2"></div>
+<script>
+    function notification(event) {
+        console.log("Notification", event);
+    }
+
+    Proxistore.config({
+        apiRoot: "https://abs.proxistore.com",
+        verbose: true,
+        googleApiKey: "AIzaSyAewBw7Cr1t_YHMwxLSwpyG3hz-DWeuPQM",
+        language: "fr",
+        darkTheme: true,
+        widgetIds: ["widget1"],
+        shortWidgetIds: "widget1",
+        geoLocationCallback: notification
+    });
+</script>
+
+
+</body>
+</html>
